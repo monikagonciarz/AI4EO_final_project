@@ -1,17 +1,16 @@
-<div style="display: flex; justify-content: center; align-items: center;">
+<table>
+  <tr>
+    <td style="text-align:center; padding-right:20px; vertical-align: middle;">
+      <h1 style="font-size: 76px;">Monitoring Coastal Erosion Through Land Cover and Land Use Change Mapping</h1>
+      <p style="font-size: 40px;">Analysing SENTINEL-2 satellite data using K-means and CNN classification methods for coastal land cover change and erosion monitoring of the Saint-Trojan Coastal Area in Western France.</p>
+    </td>
+    <td style="vertical-align: middle;">
+      <img src="./Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" style="width: 1000px; height: auto;" />
+    </td>
+  </tr>
+</table>
 
-  <!-- Left Side (Text) -->
-  <div style="text-align: left; padding-right: 20px;">
-    <h1>Monitoring Coastal Erosion Through Land Cover and Land Use Change Mapping</h1>
-    <p>Analysing SENTINEL-2 satellite data using K-means and CNN classification methods for coastal land cover change and erosion monitoring of the Saint-Trojan Coastal Area in Western France.</p>
-  </div>
 
-  <!-- Right Side (Image) -->
-  <div>
-    <img src="./Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" />
-  </div>
-
-</div>
 
 
 
