@@ -95,7 +95,7 @@ pip install rasterio
 
 ## 7. Results
 
-![1](https://github.com/user-attachments/assets/9ad1fa9f-5d32-4703-b970-946ab34ba70f)
+![1](https://github.com/user-attachments/assets/Sentinel-2_L2A-459879377421259-timelapse.gif)
 
 
 <br>  
