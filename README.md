@@ -18,7 +18,7 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 <summary>Table of Contents</summary>
   
 1. [Project Introduction](#1-project-introduction)
-2. [Background](#2-background)
+2. [Problem Background](#2-problem-background)
 3. [The SENTINEL-2 Satellite](#3-the-sentinel-2-satellite)
 4. [Machine Learning Methodologies:](#4-machine-learning-methodologies)
     - [K-Means Clustering](#k-means-clustering)
@@ -43,7 +43,7 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 
 <br>  
 
-## 2. Background
+## 2. Problem Background
 
 
 
@@ -55,6 +55,7 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 
 <br>  
 
+
 ## 4. Machine Learning Methodologies:
 
 ### - K-Means Clustering
@@ -63,11 +64,13 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 
 <br>  
 
+
 ### - Convolutional Neural Network (CNN)
 
 
 
 <br>  
+
 
 ## 5. Datasets Used
 
@@ -76,6 +79,11 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 <br>  
 
 ## 6. Usage
+
+[Here is a video demonstration of the code, detailing its functionality and operation.](https://youtu.be/rqpMsphdrzo)
+
+
+
 
 
 
@@ -90,13 +98,12 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 ## 8. Acknowledgments
 
 This project was developed for GEOL0069 2024/2025 (Artificial Intelligence For Earth Observation) at UCL, led by the module team: Dr Michel Tsamados, Weibin Chen, and Connor Nelson.
+
 <br>  
 
 
 ### References
-*Unsupervised Learning* — GEOL0069 GitHub Page. (Accessed 2025). [https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html]
-
-
+*Unsupervised Learning* — GEOL0069 GitHub Page. (Accessed 2025). https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html
 
 <br>  
 
@@ -104,7 +111,7 @@ This project was developed for GEOL0069 2024/2025 (Artificial Intelligence For E
 
 Project Author: Monika Gonciarz monika.gonciarz.22@ucl.ac.uk
 
-Project Link: [https://github.com/monikagonciarz/AI4EO_final_project]
+Project Link: https://github.com/monikagonciarz/AI4EO_final_project
 
 <br>
 <br>
