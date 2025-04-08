@@ -44,6 +44,7 @@
 
 ## 1. Project Introduction
 
+This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed at exploring the application of machine learning (ML) techniques in Earth Sciences. The focus of this project is on utilizing unsupervised and supervised learning to identify coastal erosion patterns through satellite imagery. SENTINEL-2 data is employed for its high spatial resolution and relevance in coastal monitoring. The primary algorithms used for classification in this project are K-means clustering and the Convolutional Neural Network (CNN) method, which are applied to analyze and monitor land cover changes over time.
 
 
 <br>  
