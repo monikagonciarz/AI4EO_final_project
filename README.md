@@ -57,13 +57,13 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 
 ## 4. Machine Learning Methodologies:
 
-### K-Means Clustering
+### - K-Means Clustering
 
 
 
 <br>  
 
-### Convolutional Neural Network (CNN)
+### - Convolutional Neural Network (CNN)
 
 
 
@@ -107,5 +107,13 @@ Project Link: [https://github.com/monikagonciarz/AI4EO_final_project]
 
 <br>
 
-[Back to top](#top)
+
+
+
+<div style="text-align: right;">
+  
+  [(Back to top)](#top)
+</div>
+
+
 
