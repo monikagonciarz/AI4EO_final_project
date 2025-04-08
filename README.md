@@ -94,6 +94,7 @@ This project was developed for GEOL0069 2024/2025 (Artificial Intelligence For E
 
 
 ### References
+Unsupervised Learning — GEOL0069 GitHub Page. (Accessed 2025). [https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html'
 
 
 
