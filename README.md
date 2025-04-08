@@ -5,7 +5,7 @@
       <p style="font-size: 40px;">Analysing SENTINEL-2 satellite data using K-means and CNN classification methods for coastal land cover change and erosion monitoring of the Saint-Trojan Coastal Area in Western France.</p>
     </td>
     <td style="vertical-align: middle;">
-      <img src="./Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" style="width: 1000px; height: auto;" />
+      <img src="./images/Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" style="width: 1000px; height: auto;" />
     </td>
   </tr>
 </table>
