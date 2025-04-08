@@ -80,6 +80,10 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 
 ## 6. Usage
 
+```python
+pip install rasterio
+```
+
 [Here is a video demonstration of the code, detailing its functionality and operation.](https://youtu.be/rqpMsphdrzo)
 
 
@@ -91,6 +95,7 @@ Analysing SENTINEL-2 satellite data using K-means and CNN classification methods
 
 ## 7. Results
 
+![1](https://github.com/user-attachments/assets/9ad1fa9f-5d32-4703-b970-946ab34ba70f)
 
 
 <br>  
