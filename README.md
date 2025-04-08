@@ -1,14 +1,20 @@
-<div align="center">
-  
-  # Monitoring Coastal Erosion Through Land Cover and Land Use Change Mapping
+<div style="display: flex; justify-content: center; align-items: center;">
+
+  <!-- Left Side (Text) -->
+  <div style="text-align: left; padding-right: 20px;">
+    <h1>Monitoring Coastal Erosion Through Land Cover and Land Use Change Mapping</h1>
+    <p>Analysing SENTINEL-2 satellite data using K-means and CNN classification methods for coastal land cover change and erosion monitoring of the Saint-Trojan Coastal Area in Western France.</p>
+  </div>
+
+  <!-- Right Side (Image) -->
+  <div>
+    <img src="./Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" />
+  </div>
+
 </div>
 
 
-<div align="center">
-  
-Analysing SENTINEL-2 satellite data using K-means and CNN classification methods for coastal land cover change and erosion monitoring of the Saint-Trojan Coastal Area in Western France.
-## <a id="top"></a> 
-</div>
+
 
 
 <br>  
@@ -95,7 +101,7 @@ pip install rasterio
 
 ## 7. Results
 
-![1](https://github.com/user-attachments/assets/Sentinel-2_L2A-459879377421259-timelapse.gif)
+
 
 
 <br>  
