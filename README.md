@@ -66,6 +66,15 @@ This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed
 
 ### - K-Means Clustering
 
+```mermaid
+graph TD
+    A[Start] --> B[Initialize K Centroids]
+    B --> C[Assign each point to the nearest centroid]
+    C --> D[Recalculate centroids based on clusters]
+    D --> E{Convergence?}
+    E -->|Yes| F[Clusters are final]
+    E -->|No| C
+```
 
 
 <br>  
