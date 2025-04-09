@@ -1,14 +1,17 @@
 <table>
   <tr>
-    <td style="text-align:center; padding-right:20px; vertical-align: middle;">
-      <h1 style="font-size: 76px;">Monitoring Coastal Erosion Through Land Cover and Land Use Change Mapping</h1>
-      <p style="font-size: 40px;">Analysing SENTINEL-2 satellite data using K-means and CNN classification methods for coastal land cover change and erosion monitoring of the Saint-Trojan Coastal Area in Western France.</p>
+    <td align="center">
+      <h2>Tracking Coastal Erosion with AI: Land Cover Classification and Dynamics from Space</h2>
+      <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques - K-means clustering and Convolutional Neural Networks (CNNs) - to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2015 and 2025.</p>
     </td>
-    <td style="vertical-align: middle;">
-      <img src="./images/Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" style="width: 1000px; height: auto;" />
+    <td>
+      <img src="./images/Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" width="370"/>
     </td>
   </tr>
 </table>
+
+
+
 
 
 
@@ -26,12 +29,14 @@
 2. [Problem Background](#2-problem-background)
 3. [The SENTINEL-2 Satellite](#3-the-sentinel-2-satellite)
 4. [Machine Learning Methodologies:](#4-machine-learning-methodologies)
-    - [K-Means Clustering](#k-means-clustering)
-    - [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn)
-5. [Datasets Used](#5-datasets-used)
-6. [Usage](#6-usage)
-7. [Results](#7-results)
-8. [Acknowledgements](#8-acknowledgments)
+
+   [• K-Means Clustering](#bullet-k-means-clustering)
+   
+   [• Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
+6. [Datasets Used](#5-datasets-used)
+7. [Usage](#6-usage)
+8. [Results](#7-results)
+9. [Acknowledgements](#8-acknowledgments)
     - [References](#references)
     - [Contact](#contact)
 
@@ -44,7 +49,9 @@
 
 ## 1. Project Introduction
 
-This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed at exploring the application of machine learning techniques in Earth Sciences. The focus of this project is on utilizing unsupervised and supervised learning to identify coastal erosion patterns through satellite imagery. SENTINEL-2 data is employed for its high spatial resolution and relevance in coastal monitoring. The primary algorithms used for classification in this project are K-means clustering and the Convolutional Neural Network (CNN) method, which are applied to analyze and monitor land cover changes over time.
+This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed at exploring the application of machine learning techniques in Earth Sciences. The focus of this project is on utilizing unsupervised and supervised learning to identify coastal erosion patterns through satellite imagery. SENTINEL-2 data is employed for its high spatial resolution and relevance in coastal monitoring. The primary algorithms used for classification in this project are K-means clustering (for unsupervised classification) and the Convolutional Neural Network (CNN) method (for feature extraction and land type identification), which are applied to analyze and monitor land cover changes over time.
+
+
 
 
 <br>  
@@ -64,7 +71,8 @@ This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed
 
 ## 4. Machine Learning Methodologies:
 
-### - K-Means Clustering
+## <a name="bullet-k-means-clustering"></a>• K-Means Clustering
+
 
 ```mermaid
 graph TD
@@ -80,7 +88,7 @@ graph TD
 <br>  
 
 
-### - Convolutional Neural Network (CNN)
+## <a name="bullet-convolutional-neural-network-cnn"></a>• Convolutional Neural Network (CNN)
 
 
 
@@ -117,12 +125,12 @@ pip install rasterio
 
 ## 8. Acknowledgments
 
-This project was developed for GEOL0069 2024/2025 (Artificial Intelligence For Earth Observation) at UCL, led by the module team: Dr Michel Tsamados, Weibin Chen, and Connor Nelson.
+This project was developed for GEOL0069 (Artificial Intelligence For Earth Observation) 2024/2025 at UCL, led by the module team: Dr Michel Tsamados, Weibin Chen, and Connor Nelson.
 
 <br>  
 
 
-### References
+## References
 *Copernicus Browser.* (n.d.). (Accessed 2025), from Copernicus Browser website https://browser.dataspace.copernicus.eu
 
 Tsamados M. & Chen W. *Regression Techniques for Predictive Analysis.* GEOL0069 GitHub Page. (2022). (Accessed 2025), from https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1_Regression.html
@@ -133,7 +141,7 @@ Tsamados M. & Chen W. *Unsupervised Learning.* GEOL0069 GitHub Page. (2022). (Ac
 
 <br>  
 
-### Contact
+## Contact
 
 Project Author: Monika Gonciarz monika.gonciarz.22@ucl.ac.uk
 
