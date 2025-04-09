@@ -108,6 +108,9 @@ pip install rasterio
 
 [Here is a video demonstration of the code, detailing its functionality and operation.](https://youtu.be/rqpMsphdrzo)
 
+[![Click here to watch the video demonstration](https://img.youtube.com/vi/rqpMsphdrzo/0.jpg)](https://youtu.be/rqpMsphdrzo)
+
+
 VIDEO THUMBNAIL
 
 
