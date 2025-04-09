@@ -64,11 +64,18 @@ Coastal erosion is a critical environmental issue, threatening ecosystems, human
 
 
 
-WHY FRANCE (Musereau et al., 2007)
+#### Why this study area? 
 
+In the two decades leading up to 2007, the coastline of Saint-Trojan on Île d'Oléron in the Gulf of Biscay has faced significant erosion, with rates of 4 to 6 meters per year (Musereau et al., 2007). This has raised both environmental and economic concerns, as the beach and dunes are vital for the region’s tourist industry. Although previous studies have used probabilistic models to assess erosion risks, these models have been based on historical data and need refinement for broader application. A chosen area of around 30 km^2 is suitable for studying coastal erosion as it captures diverse coastal features while being manageable for data analysis.
 
+#### Why this timeframe?
 
-This project focuses on using machine learning algorithms to analyze SENTINEL-2 satellite data for monitoring coastal erosion in the Saint-Trojan Coastal Area in Western France. By applying K-means clustering and Convolutional Neural Networks (CNN), we aim to classify land cover types and detect changes related to erosion over time. These machine learning techniques allow for automated and scalable analysis, providing insights into coastal dynamics and land use changes.
+No comprehensive studies have been conducted in the area since 2007 (Musereau et al., 2007), making it an intriguing opportunity for analysis now. Given the increasing impact of climate change and more frequent storms, the period from 2015 to 2025 is critical for improving coastal erosion prediction. This decade is essential for enhancing our understanding of coastal dynamics and improving erosion forecasting tools, as significant erosion has been observed there in that timeframe.
+
+#### Why use satellite data?
+
+Advancements in satellite imagery and machine learning techniques offer new opportunities to monitor and predict coastal changes with higher accuracy. By utilizing SENTINEL-2 satellite data, alongside machine learning algorithms like K-means and CNNs, more precise predictions of erosion events can be made, aiding in better coastal management and preservation. By applying K-means clustering and Convolutional Neural Networks (CNN), we aim to classify land cover types and detect changes related to erosion over time. These machine learning techniques allow for automated and scalable analysis, providing insights into coastal dynamics and land use changes.
+
 
 The goal is to enhance coastal management by providing more accurate, data-driven tools for monitoring erosion and supporting decision-making. Ultimately, this project demonstrates the potential of AI in Earth observation, offering an innovative approach to studying coastal erosion and environmental change.
 
@@ -80,6 +87,15 @@ The goal is to enhance coastal management by providing more accurate, data-drive
 ## 3. The SENTINEL-2 Satellite
 
 FIGURE ON S2
+
+
+high spatial resolution (10 m to 60 m) (Copernicus Dataspace, n.d.)
+
+Sentinel-2 L2A datasets
+
+Multi-Spectral Instrument (MSI)
+
+
 
 <br>  
 
@@ -146,6 +162,8 @@ This project was developed for GEOL0069 (Artificial Intelligence For Earth Obser
 
 ## References
 *Copernicus Browser.* (n.d.). (Accessed 2025), from the Copernicus Browser website. https://browser.dataspace.copernicus.eu
+
+*Copernicus Dataspace: Sentinel-2.* (n.d.). (Accessed 2025), from the Copernicus Dataspace website. https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2
 
 Molnar C. (2025). *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable.* https://christophm.github.io/interpretable-ml-book/cnn-features.html
 
