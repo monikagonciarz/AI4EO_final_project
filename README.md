@@ -123,7 +123,13 @@ This project was developed for GEOL0069 2024/2025 (Artificial Intelligence For E
 
 
 ### References
-*Unsupervised Learning* — GEOL0069 GitHub Page. (Accessed 2025). https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html
+*Copernicus Browser.* (n.d.). (Accessed 2025), from Copernicus Browser website https://browser.dataspace.copernicus.eu
+
+Tsamados M. & Chen W. *Regression Techniques for Predictive Analysis.* GEOL0069 GitHub Page. (2022). (Accessed 2025), from https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1_Regression.html
+
+Tsamados M. & Chen W. *Unsupervised Learning.* GEOL0069 GitHub Page. (2022). (Accessed 2025), from https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html
+
+
 
 <br>  
 
