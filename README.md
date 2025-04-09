@@ -133,9 +133,13 @@ This project was developed for GEOL0069 (Artificial Intelligence For Earth Obser
 ## References
 *Copernicus Browser.* (n.d.). (Accessed 2025), from Copernicus Browser website https://browser.dataspace.copernicus.eu
 
+Molnar C. *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable.* (2025). from https://christophm.github.io/interpretable-ml-book/cnn-features.html
+
 Tsamados M. & Chen W. *Regression Techniques for Predictive Analysis.* GEOL0069 GitHub Page. (2022). (Accessed 2025), from https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1_Regression.html
 
 Tsamados M. & Chen W. *Unsupervised Learning.* GEOL0069 GitHub Page. (2022). (Accessed 2025), from https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html
+
+
 
 
 
