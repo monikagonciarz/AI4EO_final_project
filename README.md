@@ -6,7 +6,7 @@
       <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques - K-means clustering and Convolutional Neural Networks (CNNs) - to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2015 and 2025.</p>
     </td>
     <td>
-      <img src="./images/Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" width="370"/>
+      <img src="./images/SENTINEL-2_L2A-459879377421259-timelapse.gif" alt="SENTINEL-2 Timelapse" width="370"/>
     </td>
   </tr>
 </table>
@@ -28,7 +28,7 @@
   
 1. [Project Introduction](#1-project-introduction)
 2. [Problem Background](#2-problem-background)
-3. [The SENTINEL-2 Satellite](#3-the-sentinel-2-satellite)
+3. [The SENTINEL-2 Satellite](#3-the-SENTINEL-2-satellite)
 4. [Machine Learning Methodologies:](#4-machine-learning-methodologies)
    - [K-Means Clustering](#bullet-k-means-clustering)
    - [Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
@@ -94,14 +94,28 @@ The goal is to enhance coastal management by providing more accurate, data-drive
 
 ## 3. The SENTINEL-2 Satellite
 
+SENTINEL-2 is part of the Copernicus programme, developed by the European Union and managed by the European Space Agency (ESA). It consists of two twin satellites in a sun-synchronous orbit, working in tandem to monitor land surface changes across the globe. SENTINEL-2 is designed to provide detailed and frequent imagery with a high revisit time of 5 days at the Equator, which is essential for tracking environmental changes. The satellite's observation capabilities are particularly geared towards monitoring vegetation, soil, water cover, and coastal areas (Copernicus Dataspace, n.d.).
+
+#### Multi-Spectral Instrument (MSI)
+
+SENTINEL-2's core imaging technology is the Multi-Spectral Instrument (MSI), which captures data across 13 spectral bands. These bands have varying spatial resolutions: four bands at 10 meters, six bands at 20 meters, and three bands at 60 meters (Copernicus Dataspace, n.d.). This multi-resolution imaging allows SENTINEL-2 to offer detailed observations suitable for various applications, including land monitoring, agriculture, forestry, and disaster management. The MSI is key to providing a comprehensive view of Earth's surface conditions.
+
+
 FIGURE ON S2
 
 
-high spatial resolution (10 m to 60 m) (Copernicus Dataspace, n.d.)
+#### Key Features
 
-Sentinel-2 L2A datasets
+• ***High Resolution:*** SENTINEL-2's MSI offers high spatial resolution, with bands capturing features at 10m, 20m, and 60m depending on the spectral band.
 
-Multi-Spectral Instrument (MSI)
+• ***Frequent Revisit:*** The satellites are phased at 180° to provide a 5-day revisit time at the Equator, ensuring up-to-date imagery for monitoring dynamic environments.
+
+• ***Wide Swath:*** With a 290 km wide swath, SENTINEL-2 covers a large area in each pass, making it efficient for monitoring vast regions.
+
+
+
+
+For my project, I have utilized data collected by SENTINEL-2 satellites, particularly the images and information gathered through the MSI. This data has been essential in analyzing land cover changes and monitoring various environmental parameters across different regions.
 
 
 
@@ -112,12 +126,42 @@ Multi-Spectral Instrument (MSI)
 
 ### <a name="bullet-k-means-clustering"></a>• K-Means Clustering
 
+K-means is an unsupervised machine learning algorithm used to partition data into 'k' distinct clusters based on feature similarity. It’s especially useful when prior knowledge about the data’s structure is unavailable. Through iterative refinement, K-means assigns each data point to the nearest cluster center (centroid) and then updates those centroids until the configuration stabilizes (Tsamados & Chen, 2022).
+
+#### Key Components of K-means
+1. ***Choosing k:*** The number of clusters must be pre-defined. Selecting an optimal 'k' often involves extensive testing and evaluating metrics.
+2. ***Centroid Initialization:*** Starting positions for centroids can influence the final results.
+3. ***Assignment Step:*** Each data point is assigned to the cluster with the nearest centroid (commonly using Euclidean distance).
+4. ***Update Step:*** Centroids are recalculated as the mean of all data points assigned to them.
+5. ***Iteration:*** The assignment and update steps repeat until the centroids no longer significantly change or a maximum number of iterations is reached.
+6. ***Convergence:*** The algorithm stops when the intra-cluster variance is minimized and cluster memberships stabilize.
+
+
+
+
 FIGURE ON K-MEANS
 
 <br>  
 
 
 ### <a name="bullet-convolutional-neural-network-cnn"></a>• Convolutional Neural Network (CNN)
+
+CNNs are a type of deep learning model specifically designed to process and analyze image data. They operate by converting input images into numerical vectors and passing them through multiple layers of filters that learn to detect patterns and features such as edges, textures, and shapes (Tsamados & Chen, 2022). This makes CNNs particularly well-suited for classification tasks like land cover mapping using satellite imagery. Their ability to automatically extract spatial features, handle high-dimensional complex data, and adapt to variations such as lighting or seasonal changes makes them especially powerful tools in remote sensing and Earth observation applications.
+
+#### Key Components of CNNs
+1. ***Convolutional Layers:*** CNNs are comprised of neuron layers which include input, hidden, and output layers.
+2. ***Activation Functions:*** Introduce non-linearity (for example using ReLU) to capture complex relationships.
+3. ***Pooling Layers:*** Downsample feature maps to reduce size and overfitting.
+4. ***Fully Connected Layers:*** Combine learned features for final predictions by connecting every neuron in every layer.
+5. ***Training Process:*** Weights are optimized through backpropagation to minimize classification error.
+
+
+
+
+
+
+
+
 
 FIGURE ON CNN
 
@@ -126,7 +170,7 @@ FIGURE ON CNN
 
 ## 5. Datasets Used
 
-The datasets used in this project are Sentinel-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2015, 2020, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
+The datasets used in this project are SENTINEL-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2015, 2020, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
 
 
 Due to the large size of the datasets, they are not included here. However, individuals interested in using the same data can download them from the Copernicus Browser, which requires a free account for access.
@@ -134,31 +178,22 @@ Due to the large size of the datasets, they are not included here. However, indi
 #### To retrieve the datasets for the Saint-Trojan Coastal Area:
 
 1. Visit the [Copernicus Dataspace Browser](https://browser.dataspace.copernicus.eu).
-
 2. Create an account.
-
-4. In the search tab, enter the following filenames to locate the relevant Sentinel-2 datasets:
-
-      • Sentinel-2 L2A data for 2015:
+3. In the search tab, enter the following filenames to locate the relevant SENTINEL-2 datasets:
    
+      • SENTINEL-2 L2A data for 2015:
    ```plaintext
    S2A_MSIL2A_20150729T110026_N0500_R094_T30TXR_20231010T114432.SAFE
    ```
-
-      • Sentinel-2 L2A data for 2020:
-
+      • SENTINEL-2 L2A data for 2020:
    ```plaintext
    S2B_MSIL2A_20200727T105619_N0500_R094_T30TXR_20230430T011345.SAFE
     ```
-
-      • Sentinel-2 L2A data for 2025:
-
+      • SENTINEL-2 L2A data for 2025:
    ```plaintext
    S2C_MSIL2A_20250407T105641_N0511_R094_T30TXR_20250407T163015.SAFE
    ```
-
-  
-5. Download the files and unzip them in your local file system for use in this project.
+4. Download the files and unzip them in your local file system for use in this project.
 
 
 
@@ -207,7 +242,7 @@ This project was developed for GEOL0069 (Artificial Intelligence For Earth Obser
 ## References
 *Copernicus Browser.* (n.d.). (Accessed 2025), from the Copernicus Browser website. https://browser.dataspace.copernicus.eu
 
-*Copernicus Dataspace: Sentinel-2.* (n.d.). (Accessed 2025), from the Copernicus Dataspace website. https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2
+*Copernicus Dataspace: SENTINEL-2.* (n.d.). (Accessed 2025), from the Copernicus Dataspace website. https://dataspace.copernicus.eu/explore-data/data-collections/SENTINEL-data/SENTINEL-2
 
 Manawa. *Top 7 outdoor activities on the Ile d’Oléron.* (2024). Retrieved April 9, 2025, from Manawa website: https://www.manawa.com/en/articles/top-7-outdoor-activities-on-the-ile-doleron
 
@@ -217,7 +252,7 @@ Musereau, J., Regnauld, H., & Planchon, O. (2007). *Vulnerability of coastal dun
 
 Nicklin, M. W. (2015). *Better than Elba: Echoes of Napoleon on idyllic French islands.* Retrieved April 9, 2025, from The Washington Post website: https://www.washingtonpost.com/lifestyle/travel/better-than-elba-echoes-of-napoleon-on-idyllic-french-islands/2015/05/28/b195ff02-fe36-11e4-8b6c-0dcce21e223d_story.html
 
-Phiri, D., Simwanda, M., Salekin, S., Nyirenda, V. R., Murayama, Y., & Ranagalage, M. (2020). *Sentinel-2 data for land cover/use mapping: A review.* Remote sensing, 12(14), 2291. https://www.mdpi.com/2072-4292/12/14/2291
+Phiri, D., Simwanda, M., Salekin, S., Nyirenda, V. R., Murayama, Y., & Ranagalage, M. (2020). *SENTINEL-2 data for land cover/use mapping: A review.* Remote sensing, 12(14), 2291. https://www.mdpi.com/2072-4292/12/14/2291
 
 Tsamados M. & Chen W. (2022). *Regression Techniques for Predictive Analysis.* GEOL0069 GitHub Page. (Accessed 2025). https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1_Regression.html
 
