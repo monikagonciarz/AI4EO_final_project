@@ -133,7 +133,7 @@ Due to the large size of the datasets, they are not included here. However, indi
 
 #### To retrieve the datasets for the Saint-Trojan Coastal Area:
 
-1. Visit the [Copernicus Open Access Hub](https://browser.dataspace.copernicus.eu).
+1. Visit the [Copernicus Dataspace Browser](https://browser.dataspace.copernicus.eu).
 
 2. Create an account.
 
