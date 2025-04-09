@@ -29,10 +29,8 @@
 2. [Problem Background](#2-problem-background)
 3. [The SENTINEL-2 Satellite](#3-the-sentinel-2-satellite)
 4. [Machine Learning Methodologies:](#4-machine-learning-methodologies)
-
-   [• K-Means Clustering](#bullet-k-means-clustering)
-   
-   [• Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
+   - [K-Means Clustering](#bullet-k-means-clustering)
+   - [Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
 6. [Datasets Used](#5-datasets-used)
 7. [Usage](#6-usage)
 8. [Results](#7-results)
