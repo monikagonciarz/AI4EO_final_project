@@ -71,7 +71,7 @@ This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed
 
 ## 4. Machine Learning Methodologies:
 
-## <a name="bullet-k-means-clustering"></a>• K-Means Clustering
+### <a name="bullet-k-means-clustering"></a>• K-Means Clustering
 
 
 ```mermaid
@@ -88,7 +88,7 @@ graph TD
 <br>  
 
 
-## <a name="bullet-convolutional-neural-network-cnn"></a>• Convolutional Neural Network (CNN)
+### <a name="bullet-convolutional-neural-network-cnn"></a>• Convolutional Neural Network (CNN)
 
 
 
@@ -108,7 +108,7 @@ pip install rasterio
 ```
 
 
-## <a name="bullet-video-tutorial"></a>• Video Tutorial
+### <a name="bullet-video-tutorial"></a>• Video Tutorial
 
 [Here is a video demonstration of the code, detailing its functionality and operation.](https://youtu.be/rqpMsphdrzo)
 
