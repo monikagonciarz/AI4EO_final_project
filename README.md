@@ -108,7 +108,7 @@ pip install rasterio
 
 Here is a video demonstration of the code, detailing its functionality and operation.
 
-[![Click here to watch the video demonstration](./images/video.png)](https://youtu.be/rqpMsphdrzo)
+[<img src="./images/video.png" alt="Click here to watch the video demonstration" width="400"/>](https://youtu.be/rqpMsphdrzo)
 
 
 
