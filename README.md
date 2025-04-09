@@ -2,7 +2,10 @@
   <tr>
     <td align="center">
       <h2>Tracking Coastal Erosion with AI: Land Cover Classification and Dynamics from Space</h2>
-      <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques - K-means clustering and Convolutional Neural Networks (CNNs) - to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2015 and 2025.</p>
+      <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques - K-means clustering and Convolutional Neural Networks (CNNs) - to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2015 and 2025.
+       <a id="top"></a> 
+</div>
+</p>
     </td>
     <td>
       <img src="./images/Sentinel-2_L2A-459879377421259-timelapse.gif" alt="Sentinel-2 Timelapse" width="370"/>
@@ -33,8 +36,9 @@
    - [Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
 6. [Datasets Used](#5-datasets-used)
 7. [Usage](#6-usage)
-8. [Results](#7-results)
-9. [Acknowledgements](#8-acknowledgments)
+   - [Video Tutorial](#bullet-video-tutorial)
+9. [Results](#7-results)
+10. [Acknowledgements](#8-acknowledgments)
     - [References](#references)
     - [Contact](#contact)
 
@@ -104,6 +108,9 @@ graph TD
 ```python
 pip install rasterio
 ```
+
+
+## <a name="bullet-video-tutorial"></a>• Video Tutorial
 
 [Here is a video demonstration of the code, detailing its functionality and operation.](https://youtu.be/rqpMsphdrzo)
 
