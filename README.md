@@ -32,11 +32,12 @@
 4. [Machine Learning Methodologies:](#4-machine-learning-methodologies)
    - [K-Means Clustering](#bullet-k-means-clustering)
    - [Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
-6. [Datasets Used](#5-datasets-used)
-7. [Usage](#6-usage)
+5. [Datasets Used](#5-datasets-used)
+6. [Usage](#6-usage)
+   - [Environmental Cost](#bullet-environmental-cost)
    - [Video Tutorial](#bullet-video-tutorial)
-9. [Results](#7-results)
-10. [Acknowledgements](#8-acknowledgments)
+7. [Results](#7-results)
+8. [Acknowledgements](#8-acknowledgments)
     - [References](#references)
     - [Contact](#contact)
 
@@ -64,7 +65,7 @@ This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed
 
 ## 3. The SENTINEL-2 Satellite
 
-
+FIGURE ON S2
 
 <br>  
 
@@ -73,24 +74,14 @@ This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed
 
 ### <a name="bullet-k-means-clustering"></a>• K-Means Clustering
 
-
-```mermaid
-graph TD
-    A[Start] --> B[Initialize K Centroids]
-    B --> C[Assign each point to the nearest centroid]
-    C --> D[Recalculate centroids based on clusters]
-    D --> E{Convergence?}
-    E -->|Yes| F[Clusters are final]
-    E -->|No| C
-```
-
+FIGURE ON K-MEANS
 
 <br>  
 
 
 ### <a name="bullet-convolutional-neural-network-cnn"></a>• Convolutional Neural Network (CNN)
 
-
+FIGURE ON CNN
 
 <br>  
 
@@ -107,12 +98,17 @@ graph TD
 pip install rasterio
 ```
 
+### <a name="bullet-environmental-cost"></a>• Environmental Cost
+
+
+
+
 
 ### <a name="bullet-video-tutorial"></a>• Video Tutorial
 
 [Here is a video demonstration of the code, detailing its functionality and operation.](https://youtu.be/rqpMsphdrzo)
 
-
+VIDEO THUMBNAIL
 
 
 
