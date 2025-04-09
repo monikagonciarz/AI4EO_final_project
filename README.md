@@ -70,7 +70,7 @@ In the two decades leading up to 2007, the coastline of Saint-Trojan on Île d'O
 
 
 
-  <img src="./images/biscay.png" alt="Description" width="300" />        <img src="./images/photo.png" alt="Description" width="600" />
+  <img src="./images/biscay.png" alt="Description" height="410" />        <img src="./images/photo.jpg" alt="Description" height="410" />
 
 
 
