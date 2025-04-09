@@ -59,6 +59,19 @@ This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed
 
 ## 2. Problem Background
 
+Coastal erosion is a critical environmental issue, threatening ecosystems, human livelihoods, and infrastructure. Traditional monitoring methods, such as field surveys, are costly and time-intensive, making large-scale and real-time analysis difficult. Satellite remote sensing, particularly through high-resolution imagery like SENTINEL-2, provides a solution by offering frequent, accessible, and detailed data on coastal regions (Phiri et al., 2020).
+
+
+
+WHY FRANCE
+
+
+
+This project focuses on using machine learning algorithms to analyze SENTINEL-2 satellite data for monitoring coastal erosion in the Saint-Trojan Coastal Area in Western France. By applying K-means clustering and Convolutional Neural Networks (CNN), we aim to classify land cover types and detect changes related to erosion over time. These machine learning techniques allow for automated and scalable analysis, providing insights into coastal dynamics and land use changes.
+
+The goal is to enhance coastal management by providing more accurate, data-driven tools for monitoring erosion and supporting decision-making. Ultimately, this project demonstrates the potential of AI in Earth observation, offering an innovative approach to studying coastal erosion and environmental change.
+
+
 
 
 <br>  
@@ -134,6 +147,8 @@ This project was developed for GEOL0069 (Artificial Intelligence For Earth Obser
 *Copernicus Browser.* (n.d.). (Accessed 2025), from Copernicus Browser website https://browser.dataspace.copernicus.eu
 
 Molnar C. *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable.* (2025). from https://christophm.github.io/interpretable-ml-book/cnn-features.html
+
+Phiri, D., Simwanda, M., Salekin, S., Nyirenda, V. R., Murayama, Y., & Ranagalage, M. (2020). *Sentinel-2 data for land cover/use mapping: A review.* Remote sensing, 12(14), 2291.
 
 Tsamados M. & Chen W. *Regression Techniques for Predictive Analysis.* GEOL0069 GitHub Page. (2022). (Accessed 2025), from https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1_Regression.html
 
