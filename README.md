@@ -126,6 +126,42 @@ FIGURE ON CNN
 
 ## 5. Datasets Used
 
+The datasets used in this project are Sentinel-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2015, 2020, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
+
+
+Due to the large size of the datasets, they are not included here. However, individuals interested in using the same data can download them from the Copernicus Browser, which requires a free account for access.
+
+#### To retrieve the datasets for the Saint-Trojan Coastal Area:
+
+1. Visit the Copernicus Open Access Hub.
+
+2. In the search tab, enter the following filenames to locate the relevant Sentinel-2 datasets:
+
+      • Sentinel-2 L2A data for 2015:
+   
+   ```plaintext
+   S2A_MSIL2A_20150729T110026_N0500_R094_T30TXR_20231010T114432.SAFE
+   ```
+
+      • Sentinel-2 L2A data for 2020:
+
+   ```plaintext
+   S2B_MSIL2A_20200727T105619_N0500_R094_T30TXR_20230430T011345.SAFE
+    ```
+
+      • Sentinel-2 L2A data for 2025:
+
+   ```plaintext
+   S2C_MSIL2A_20250407T105641_N0511_R094_T30TXR_20250407T163015.SAFE
+   ```
+
+  
+
+
+4. Download the files and unzip them in your local file system for use in this project.
+
+
+
 
 
 <br>  
