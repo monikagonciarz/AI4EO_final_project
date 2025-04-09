@@ -135,7 +135,9 @@ Due to the large size of the datasets, they are not included here. However, indi
 
 1. Visit the [Copernicus Open Access Hub](https://browser.dataspace.copernicus.eu).
 
-2. In the search tab, enter the following filenames to locate the relevant Sentinel-2 datasets:
+2. Create an account.
+
+4. In the search tab, enter the following filenames to locate the relevant Sentinel-2 datasets:
 
       • Sentinel-2 L2A data for 2015:
    
@@ -156,9 +158,7 @@ Due to the large size of the datasets, they are not included here. However, indi
    ```
 
   
-
-
-4. Download the files and unzip them in your local file system for use in this project.
+5. Download the files and unzip them in your local file system for use in this project.
 
 
 
