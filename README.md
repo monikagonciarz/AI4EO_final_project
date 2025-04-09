@@ -106,12 +106,10 @@ pip install rasterio
 
 ### <a name="bullet-video-tutorial"></a>• Video Tutorial
 
-[Here is a video demonstration of the code, detailing its functionality and operation.](https://youtu.be/rqpMsphdrzo)
+Here is a video demonstration of the code, detailing its functionality and operation.
 
-[![Click here to watch the video demonstration](https://img.youtube.com/vi/rqpMsphdrzo/0.jpg)](https://youtu.be/rqpMsphdrzo)
+[![Click here to watch the video demonstration](./images/video-thumbnail.jpg)](https://youtu.be/rqpMsphdrzo)
 
-
-VIDEO THUMBNAIL
 
 
 
