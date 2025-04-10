@@ -3,10 +3,10 @@
     <td align="center">
       <h2>Tracking Coastal Erosion with AI: Land Cover Classification and Dynamics from Space <a id="top"></a> 
 </div></h2>
-      <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques - K-means clustering and Convolutional Neural Networks (CNNs) - to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2015 and 2025.</p>
+      <p>This project utilizes SENTINEL-2 imagery and an advanced machine learning technique (K-means clustering) to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2020 and 2025.</p>
     </td>
     <td>
-      <img src="./images/Sentinel-2_L2A-459879377421259-timelapse.gif" alt="SENTINEL-2 Timelapse" width="370"/>
+      <img src="./images/timelapse.gif" alt="SENTINEL-2 Timelapse" width="370"/>
     </td>
   </tr>
 </table>
@@ -78,7 +78,7 @@ In the two decades leading up to 2007, the coastline of Saint-Trojan on Île d'O
 
 #### Why this timeframe?
 
-No comprehensive studies have been conducted in the area since 2007 (Musereau et al., 2007), making it an intriguing opportunity for analysis now. Given the increasing impact of climate change and more frequent storms, the period from 2015 to 2025 is critical for improving coastal erosion prediction. This decade is essential for enhancing our understanding of coastal dynamics and improving erosion forecasting tools, as significant erosion has been observed there in that timeframe.
+No comprehensive studies have been conducted in the area since 2007 (Musereau et al., 2007), making it an intriguing opportunity for analysis now. Given the increasing impact of climate change and more frequent storms, the period from 2020 to 2025 is critical for improving coastal erosion prediction. This decade is essential for enhancing our understanding of coastal dynamics and improving erosion forecasting tools, as significant erosion has been observed there in that timeframe.
 
 #### Why use satellite data?
 
@@ -170,7 +170,7 @@ FIGURE ON CNN
 
 ## 5. Datasets Used
 
-The datasets used in this project are SENTINEL-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2015, 2020, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
+The datasets used in this project are SENTINEL-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2020, 2020, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
 
 
 Due to the large size of the datasets, they are not included here. However, individuals interested in using the same data can download them from the Copernicus Browser, which requires a free account for access.
@@ -180,15 +180,18 @@ Due to the large size of the datasets, they are not included here. However, indi
 1. Visit the [Copernicus Dataspace Browser](https://browser.dataspace.copernicus.eu).
 2. Create an account.
 3. In the search tab, enter the following filenames to locate the relevant SENTINEL-2 datasets:
-   
-      • SENTINEL-2 L2A data for 2015:
-   ```plaintext
-   S2A_MSIL2A_20150729T110026_N0500_R094_T30TXR_20231010T114432.SAFE
-   ```
-      • SENTINEL-2 L2A data for 2020:
+
+   • SENTINEL-2 L2A data for 2020:
    ```plaintext
    S2B_MSIL2A_20200727T105619_N0500_R094_T30TXR_20230430T011345.SAFE
     ```
+
+   
+      • SENTINEL-2 L2A data for 2022:
+   ```plaintext
+   S2A_MSIL2A_20220712T105631_N0510_R094_T30TXR_20240723T232251.SAFE
+   ```
+
       • SENTINEL-2 L2A data for 2025:
    ```plaintext
    S2C_MSIL2A_20250407T105641_N0511_R094_T30TXR_20250407T163015.SAFE
