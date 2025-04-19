@@ -3,7 +3,7 @@
     <td align="center">
       <h2>Tracking Coastal Erosion with AI: Land Cover Classification and Dynamics from Space <a id="top"></a> 
 </div></h2>
-      <p>This project utilizes SENTINEL-2 imagery and an advanced machine learning technique (K-means clustering) to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2020 and 2025.</p>
+      <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques (K-means clustering and CNN) to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2020 and 2025.</p>
     </td>
     <td>
       <img src="./images/timelapse.gif" alt="SENTINEL-2 Timelapse" width="370"/>
@@ -34,8 +34,8 @@
    - [Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
 5. [Datasets Used](#5-datasets-used)
 6. [Usage](#6-usage)
-   - [Environmental Cost](#bullet-environmental-cost)
    - [Video Tutorial](#bullet-video-tutorial)
+   - [Environmental Cost](#bullet-environmental-cost)
 7. [Results](#7-results)
 8. [Acknowledgements](#8-acknowledgments)
     - [References](#references)
@@ -69,8 +69,9 @@ Coastal erosion is a critical environmental issue, threatening ecosystems, human
 In the two decades leading up to 2007, the coastline of Saint-Trojan on Île d'Oléron in the Gulf of Biscay (figure on the right, adapted from Manawa, 2024) has faced significant erosion, with rates of 4 to 6 meters per year (Musereau et al., 2007). This has raised both environmental and economic concerns, as the beach and dunes are vital for the region’s tourist industry. Although previous studies have used probabilistic models to assess erosion risks, these models have been based on historical data and need refinement for broader application. A chosen area of around 30 km^2 (figure on the left, adapted from Nicklin, 2015) is suitable for studying coastal erosion as it captures diverse coastal features while being manageable for data analysis.
 
 
-
-  <img src="./images/biscay.png" alt="Description" height="350" />
+<p align="center">
+  <img src="./images/biscay.png" alt="Description" />
+</p>
 
 
 
@@ -94,15 +95,16 @@ The goal is to enhance coastal management by providing more accurate, data-drive
 
 ## 3. The SENTINEL-2 Satellite
 
-SENTINEL-2 is part of the Copernicus programme, developed by the European Union and managed by the European Space Agency (ESA). It consists of two twin satellites in a sun-synchronous orbit, working in tandem to monitor land surface changes across the globe. SENTINEL-2 is designed to provide detailed and frequent imagery with a high revisit time of 5 days at the Equator, which is essential for tracking environmental changes. The satellite's observation capabilities are particularly geared towards monitoring vegetation, soil, water cover, and coastal areas (Copernicus Dataspace, n.d.).
+SENTINEL-2 is part of the Copernicus programme, developed by the European Union and managed by the European Space Agency (ESA). It consists of two twin satellites in a sun-synchronous orbit, working in tandem to monitor land surface changes across the globe. SENTINEL-2 is designed to provide detailed and frequent imagery with a high revisit time of 5 days at the Equator, which is essential for tracking environmental changes. The satellite's observation capabilities are particularly geared towards monitoring vegetation, soil, water cover, and coastal areas (Copernicus Dataspace, n.d.) - exactly what is needed for this project!
 
 #### Multi-Spectral Instrument (MSI)
 
 SENTINEL-2's core imaging technology is the Multi-Spectral Instrument (MSI), which captures data across 13 spectral bands. These bands have varying spatial resolutions: four bands at 10 meters, six bands at 20 meters, and three bands at 60 meters (Copernicus Dataspace, n.d.). This multi-resolution imaging allows SENTINEL-2 to offer detailed observations suitable for various applications, including land monitoring, agriculture, forestry, and disaster management. The MSI is key to providing a comprehensive view of Earth's surface conditions.
 
 
-FIGURE ON S2
 
+
+<br>
 
 #### Key Features
 
@@ -112,10 +114,15 @@ FIGURE ON S2
 
 • ***Wide Swath:*** With a 290 km wide swath, SENTINEL-2 covers a large area in each pass, making it efficient for monitoring vast regions.
 
-
-
+<br>
 
 For my project, I have utilized data collected by SENTINEL-2 satellites, particularly the images and information gathered through the MSI. This data has been essential in analyzing land cover changes and monitoring various environmental parameters across different regions.
+
+<br>
+
+<p align="center">
+  <img src="./images/S2MSI.png" alt="Description" />
+</p>
 
 
 
@@ -128,7 +135,7 @@ For my project, I have utilized data collected by SENTINEL-2 satellites, particu
 
 K-means is an unsupervised machine learning algorithm used to partition data into 'k' distinct clusters based on feature similarity. It’s especially useful when prior knowledge about the data’s structure is unavailable. Through iterative refinement, K-means assigns each data point to the nearest cluster center (centroid) and then updates those centroids until the configuration stabilizes (Tsamados & Chen, 2022).
 
-#### Key Components of K-means
+#### Key Components of K-means:
 1. ***Choosing k:*** The number of clusters must be pre-defined. Selecting an optimal 'k' often involves extensive testing and evaluating metrics.
 2. ***Centroid Initialization:*** Starting positions for centroids can influence the final results.
 3. ***Assignment Step:*** Each data point is assigned to the cluster with the nearest centroid (commonly using Euclidean distance).
@@ -137,9 +144,11 @@ K-means is an unsupervised machine learning algorithm used to partition data int
 6. ***Convergence:*** The algorithm stops when the intra-cluster variance is minimized and cluster memberships stabilize.
 
 
+<p align="center">
+  <img src="./images/KMEANS.png" alt="Description" />
+</p>
 
 
-FIGURE ON K-MEANS
 
 <br>  
 
@@ -149,28 +158,26 @@ FIGURE ON K-MEANS
 CNNs are a type of deep learning model specifically designed to process and analyze image data. They operate by converting input images into numerical vectors and passing them through multiple layers of filters that learn to detect patterns and features such as edges, textures, and shapes (Tsamados & Chen, 2022). This makes CNNs particularly well-suited for classification tasks like land cover mapping using satellite imagery. Their ability to automatically extract spatial features, handle high-dimensional complex data, and adapt to variations such as lighting or seasonal changes makes them especially powerful tools in remote sensing and Earth observation applications.
 
 #### Key Components of CNNs
-1. ***Convolutional Layers:*** CNNs are comprised of neuron layers which include input, hidden, and output layers.
+1. ***Convolutional Layers:*** CNNs are comprised of neuron layers, including input, hidden, and output layers.
 2. ***Activation Functions:*** Introduce non-linearity (for example using ReLU) to capture complex relationships.
-3. ***Pooling Layers:*** Downsample feature maps to reduce size and overfitting.
+3. ***Convolutional and Pooling Layers:*** Downsample feature maps to reduce size and overfitting.
 4. ***Fully Connected Layers:*** Combine learned features for final predictions by connecting every neuron in every layer.
 5. ***Training Process:*** Weights are optimized through backpropagation to minimize classification error.
 
 
 
+<p align="center">
+  <img src="./images/CNN.png" alt="Description" />
+</p>
 
 
-
-
-
-
-FIGURE ON CNN
 
 <br>  
 
 
 ## 5. Datasets Used
 
-The datasets used in this project are SENTINEL-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2020, 2020, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
+The datasets used in this project are the 10m resolution SENTINEL-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2020, 2020, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
 
 
 Due to the large size of the datasets, they are not included here. However, individuals interested in using the same data can download them from the Copernicus Browser, which requires a free account for access.
@@ -210,8 +217,6 @@ Due to the large size of the datasets, they are not included here. However, indi
 pip install rasterio
 ```
 
-### <a name="bullet-environmental-cost"></a>• Environmental Cost
-
 
 
 
@@ -221,6 +226,45 @@ pip install rasterio
 Click below to explore the video demonstration, providing an overview of the code's functionality and operation.
 
 [<img src="./images/video.png" alt="Click here to watch the video demonstration" width="400"/>](https://youtu.be/rqpMsphdrzo)
+
+
+
+### <a name="bullet-environmental-cost"></a>• Environmental Cost
+
+
+To reflect the resource use behind this notebook, I included a section estimate its environmental cost including energy consumption and carbon emissions. The code uses Python libraries like psutil, time, and matplotlib. 
+
+To generate the full environmental impact report, it is crucial to run the two setup cells at the start of the notebook, one which defines the necessary function and the one below which initialise a timer and begins tracking system resource usage:
+
+```python
+impact_monitor = ColabEnvironmentalImpact()
+```
+
+At the end, you can run the final cell to display your personalised environmental report (example included below), complete with visual comparisons and CO₂ equivalents:
+
+```python
+impact_monitor.generate_report()
+```
+
+<p align="center">
+  <img src="./images/environmental_cost.png" alt="Description" />
+</p>
+
+<p align="center">
+  <img src="./images/report.png" alt="Description" />
+</p>
+
+
+
+Initially, the code tracks CPU and memory usage during runtime, then rephrases it into an estimated energy usage (in kWh) and CO₂ emissions (in grams) based on average carbon intensity figures. To make the results more relatable, it calculates equivalents such as:
+
+      • How far could you drive a car to emit the same CO₂?
+      • How many times could you charge a smartphone?
+      • How many days would it take a tree to absorb that much CO₂?
+
+While the direct notebook computation is captured moderately well, it's important to note that interactions with AI models (such as the aid in creating labels for CNN), downloading datasets, or reading online resources aren't easy to quantify, but they definitely add to the footprint.
+
+The use of AI to support building this notebook arguably makes the environmental cost higher. It's a reminder to consider the trade-offs and try to use computing resources meaningfully.
 
 
 
