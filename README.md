@@ -263,6 +263,12 @@ While it is a fast method for identifying water bodies, it does have some limita
 
 <br>
 
+<p align="center">
+  <img src="./images/NDWI.png" alt="Description" width="600"/>
+</p>
+
+<br>
+
 
 
 • Later, another index is introduced: the **Normalized Difference Vegetation Index** (NDVI) to create a 'vegetation mask'. 
@@ -276,6 +282,11 @@ The formula is: **NDVI = (NIR - Red) / (NIR + Red)**
 
 High NDVI values typically indicate dense, healthy vegetation, while lower values suggest sparse or stressed plant cover. NDVI is especially useful in land cover classification, agriculture, and environmental monitoring due to its simplicity and effectiveness.
 
+<br>
+
+<p align="center">
+  <img src="./images/NDVI.png" alt="Description" width="600"/>
+</p>
 
 <br>
 
@@ -347,7 +358,51 @@ The use of AI to support building this notebook arguably makes the environmental
 ## 7. Results
 
 
-feature space clustering Balaji, (2022)
+K-Means was initially set to classify the study area into 2 dominant classes (land and water). The output was evaluated against an NDWI-based reference mask:
+
+<br>
+
+<p align="center">
+  <img src="./images/comparison.png" alt="Description" />
+</p>
+
+<br>
+
+Below are the confusion matrices and corresponding accuracies. Each matrix demonstrates how well the clustering algorithm distinguishes between land and water, showing solid agreement with the NDWI-based baseline across all years, but best for 2022.
+
+<br>
+
+<p align="center">
+  <img src="./images/classification_matrices_NDWI.png" alt="Description" />
+</p>
+
+<br>
+
+
+Then, expanding the analysis to 3 clusters (water, vegetation, and sand) provided more detailed land cover classification, identifying transitional areas such as sandy beaches and vegetated dunes. A visual inspection suggests that this classification better reflects the coastal complexity. A K-Means classification of 3 clusters with NDWI and NDVI masks taken into account is provided here: 
+
+
+<br>
+
+<p align="center">
+  <img src="./images/kmeans.png" alt="Description" />
+</p>
+
+<br>
+
+
+To better understand the separability of classes, feature space clustering plots (inspired by the Balaji, 2022 paper) were created using reflectance values from Band 3 and Band 8. The plots below show the pixel distribution and cluster centers in 2D space:
+
+<br>
+
+<p align="center">
+  <img src="./images/feature_space_clustering.png" alt="Feature Space Clustering">
+</p>
+
+<br>
+
+These plots help demonstrate how well different land covers cluster in spectral space, validating the choice of bands and number of clusters.
+
 
 
 <br>  
