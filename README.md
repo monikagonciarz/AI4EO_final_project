@@ -297,7 +297,7 @@ High NDVI values typically indicate dense, healthy vegetation, while lower value
 
 Afterwards, the K-Means classification was performed. Subsequently, the CNN technique was employed to further analyse the data.
 
-
+<br>
 
 ### <a name="bullet-video-tutorial"></a>• Video Tutorial
 
