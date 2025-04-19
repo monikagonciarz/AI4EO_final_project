@@ -156,7 +156,7 @@ K-means is an unsupervised machine learning algorithm used to partition data int
 
 ### <a name="bullet-convolutional-neural-network-cnn"></a>• Convolutional Neural Network (CNN)
 
-CNNs are a type of deep learning model specifically designed to process and analyze image data. They operate by converting input images into numerical vectors and passing them through multiple layers of filters that learn to detect patterns and features such as edges, textures, and shapes (Tsamados & Chen, 2022). This makes CNNs particularly well-suited for classification tasks like land cover mapping using satellite imagery. Their ability to automatically extract spatial features, handle high-dimensional complex data, and adapt to variations such as lighting or seasonal changes makes them especially powerful tools in remote sensing and Earth observation applications.
+CNNs are a type of deep supervised learning model specifically designed to process and analyze image data. They operate by converting input images into numerical vectors and passing them through multiple layers of filters that learn to detect patterns and features such as edges, textures, and shapes (Tsamados & Chen, 2022). This makes CNNs particularly well-suited for classification tasks like land cover mapping using satellite imagery. Their ability to automatically extract spatial features, handle high-dimensional complex data, and adapt to variations such as lighting or seasonal changes makes them especially powerful tools in remote sensing and Earth observation applications.
 
 #### Key Components of CNNs
 1. ***Convolutional Layers:*** CNNs are comprised of neuron layers, including input, hidden, and output layers.
@@ -214,10 +214,70 @@ Due to the large size of the datasets, they are not included here. However, indi
 
 ## 6. Usage
 
+First, the Google Drive must be mounted on Google Colab:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+
+Then, the following software needs to be installed in order to run the code:
+
 ```python
 pip install rasterio
 ```
 
+
+Next, a set of functions must be loaded:
+
+```python
+import rasterio
+import numpy as np
+```
+
+
+
+Then, the base file paths for the datasets used in this project are defined. These will be referenced throughout the notebook, so it is crucial to update these paths to match the locations on your device.
+
+
+The coordinates of the study area 'box' are also defined, and will be referenced throughout the notebook:
+
+```python
+lon_min, lat_max = -1.24991, 45.82923  # Top-left corner
+lon_max, lat_min = -1.19206, 45.77035  # Bottom-right corner
+```
+
+<br>
+
+• To begin the analysis, we create a **Normalized Difference Water Index** (NDWI) 'water mask'.
+
+
+The NDWI is a common technique used in remote sensing to detect the presence of surface water in satellite imagery (McFeeters, 1996). It works by comparing how much green light (band 3) and near-infrared (NIR, band 8) light is reflected from the Earth's surface. Water tends to reflect more green light and absorb NIR, so the difference between these two bands helps highlight water features.
+
+
+The formula is: **NDWI = (Green - NIR) / (Green + NIR)**
+
+
+While it is a fast method for identifying water bodies, it does have some limitations. It can struggle in urban areas or when water is mixed with high levels of sediment, often confusing these with other land types (Gao, 1996). In this project, NDWI is a reference method to benchmark our results against. Our aim is to improve upon it using more robust and adaptive machine learning techniques, especially in challenging environments where NDWI alone may fall short.
+
+<br>
+
+
+
+• Later, another index is introduced: the **Normalized Difference Vegetation Index** (NDVI) to create a 'vegetation mask'. 
+
+
+The NDVI is a widely used vegetation indicator that helps assess the presence and health of green vegetation using satellite imagery. It compares the difference between near-infrared light (band 8, which vegetation strongly reflects) and red light (band 4, which vegetation absorbs).
+
+
+The formula is: **NDVI = (NIR - Red) / (NIR + Red)**
+
+
+High NDVI values typically indicate dense, healthy vegetation, while lower values suggest sparse or stressed plant cover. NDVI is especially useful in land cover classification, agriculture, and environmental monitoring due to its simplicity and effectiveness.
+
+
+<br>
 
 
 
@@ -260,8 +320,6 @@ impact_monitor.generate_report()
   <img src="./images/environmental_cost.png" alt="Description" />
 </p>
 
-  <img src="./images/report.png" alt="Description" width="450"/>
-
 <br>
 
 Initially, the code tracks CPU and memory usage during runtime, then rephrases it into an estimated energy usage (in kWh) and CO₂ emissions (in grams) based on average carbon intensity figures. To make the results more relatable, it calculates equivalents such as:
@@ -289,6 +347,7 @@ The use of AI to support building this notebook arguably makes the environmental
 ## 7. Results
 
 
+feature space clustering Balaji, (2022)
 
 
 <br>  
@@ -301,11 +360,17 @@ This project was developed for GEOL0069 (Artificial Intelligence For Earth Obser
 
 
 ## References
+Balaji, K. (2022). Machine learning algorithm for feature space clustering of mixed data with missing information based on molecule similarity. Journal of Biomedical Informatics, 125, 103954.
+
 *Copernicus Browser.* (n.d.). (Accessed 2025), from the Copernicus Browser website. https://browser.dataspace.copernicus.eu
 
 *Copernicus Dataspace: SENTINEL-2.* (n.d.). (Accessed 2025), from the Copernicus Dataspace website. https://dataspace.copernicus.eu/explore-data/data-collections/SENTINEL-data/SENTINEL-2
 
+Gao, B. C. (1996). NDWI—A normalized difference water index for remote sensing of vegetation liquid water from space. Remote sensing of environment, 58(3), 257-266.
+
 Manawa. *Top 7 outdoor activities on the Ile d’Oléron.* (2024). Retrieved April 9, 2025, from Manawa website: https://www.manawa.com/en/articles/top-7-outdoor-activities-on-the-ile-doleron
+
+McFeeters, S. K. (1996). The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features. International journal of remote sensing, 17(7), 1425-1432.
 
 Molnar C. (2025). *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable.* https://christophm.github.io/interpretable-ml-book/cnn-features.html
 
