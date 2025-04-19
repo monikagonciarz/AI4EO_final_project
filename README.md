@@ -234,6 +234,9 @@ Next, a set of functions must be loaded:
 ```python
 import rasterio
 import numpy as np
+import matplotlib.pyplot as plt
+from pyproj import Transformer
+from rasterio.windows import from_bounds
 ```
 
 
@@ -358,7 +361,7 @@ The use of AI to support building this notebook arguably makes the environmental
 ## 7. Results
 
 
-K-Means was initially set to classify the study area into 2 dominant classes (land and water). The output was evaluated against an NDWI-based reference mask:
+K-Means was initially set to classify the study area into 2 dominant classes (land and water). The output was evaluated against an NDWI-based reference mask and the true RGB composite:
 
 <br>
 
@@ -403,6 +406,22 @@ To better understand the separability of classes, feature space clustering plots
 
 These plots help demonstrate how well different land covers cluster in spectral space, validating the choice of bands and number of clusters.
 
+
+
+
+
+
+
+An average shoreline shift of 26 meters over the total study period from 2020 to 2025 was found, which  indicates significant coastal erosion. This means that, on average, the shoreline has retreated 26 meters inland, suggesting a substantial loss of land to the sea. Such a shift can have serious implications for ecosystems, infrastructure, and communities located near the coast, highlighting the urgency of monitoring and managing coastal change.
+
+
+<br>
+
+<p align="center">
+  <img src="./images/shorelineshift.png" alt="Feature Space Clustering">
+</p>
+
+<br>
 
 
 <br>  
