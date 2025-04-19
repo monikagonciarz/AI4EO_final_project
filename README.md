@@ -411,7 +411,7 @@ These plots help demonstrate how well different land covers cluster in spectral 
 
 <br>
 
-## Final takeaway
+## Final takeaways
 <br>
 
 
@@ -425,6 +425,14 @@ An average **shoreline shift of 26 meters** over the total study period from 202
 </p>
 
 <br>
+
+A change in land use was quantified at 4.43% from a confusion matrix presented below. This represents a change in approximately **1.33 km²** within a 30 km² study area over the observed period from 2020 to 2025. This percentage reflects the **transformation of land coverage**, which includes the largest shift of 4071 pixels from sandy areas to water, which confirms the fact that coastal erosion had a significant impact on this area. Even a relatively small percentage change in land use within this area can have considerable environmental, economic, and social implications, highlighting the importance of monitoring and managing land use to ensure sustainable development and resource conservation.
+
+<br>
+
+<p align="center">
+  <img src="./images/finalconfmat.png" alt="Feature Space Clustering">
+</p>
 
 
 <br>  
