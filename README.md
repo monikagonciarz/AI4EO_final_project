@@ -214,7 +214,7 @@ Due to the large size of the datasets, they are not included here. However, indi
 
 ## 6. Usage
 
-First, the Google Drive must be mounted on Google Colab:
+The first thing to do after downloading the **Coastal_Erosion_ML.ipynb** notebook is to mount the Google Drive on Google Colab:
 
 ```python
 from google.colab import drive
