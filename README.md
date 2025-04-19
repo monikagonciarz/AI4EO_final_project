@@ -69,11 +69,13 @@ Coastal erosion is a critical environmental issue, threatening ecosystems, human
 In the two decades leading up to 2007, the coastline of Saint-Trojan on Île d'Oléron in the Gulf of Biscay (figure on the right, adapted from Manawa, 2024) has faced significant erosion, with rates of 4 to 6 meters per year (Musereau et al., 2007). This has raised both environmental and economic concerns, as the beach and dunes are vital for the region’s tourist industry. Although previous studies have used probabilistic models to assess erosion risks, these models have been based on historical data and need refinement for broader application. A chosen area of around 30 km^2 (figure on the left, adapted from Nicklin, 2015) is suitable for studying coastal erosion as it captures diverse coastal features while being manageable for data analysis.
 
 
+<br>
+
 <p align="center">
   <img src="./images/biscay.png" alt="Description" />
 </p>
 
-
+<br>
 
 
 
@@ -144,6 +146,8 @@ K-means is an unsupervised machine learning algorithm used to partition data int
 6. ***Convergence:*** The algorithm stops when the intra-cluster variance is minimized and cluster memberships stabilize.
 
 
+<br>
+
 <p align="center">
   <img src="./images/KMEANS.png" alt="Description" />
 </p>
@@ -164,7 +168,7 @@ CNNs are a type of deep learning model specifically designed to process and anal
 4. ***Fully Connected Layers:*** Combine learned features for final predictions by connecting every neuron in every layer.
 5. ***Training Process:*** Weights are optimized through backpropagation to minimize classification error.
 
-
+<br>
 
 <p align="center">
   <img src="./images/CNN.png" alt="Description" />
@@ -225,7 +229,14 @@ pip install rasterio
 
 Click below to explore the video demonstration, providing an overview of the code's functionality and operation.
 
-[<img src="./images/video.png" alt="Click here to watch the video demonstration" width="400"/>](https://youtu.be/rqpMsphdrzo)
+<br>
+
+
+[<img src="./images/video.png" alt="Click here to watch the video demonstration" width="500"/>](https://youtu.be/rqpMsphdrzo)
+
+
+<br>
+<br>
 
 
 
@@ -246,13 +257,15 @@ At the end, you can run the final cell to display your personalised environmenta
 impact_monitor.generate_report()
 ```
 
+<br>
+
 <p align="center">
   <img src="./images/environmental_cost.png" alt="Description" />
 </p>
 
   <img src="./images/report.png" alt="Description" width="450"/>
 
-
+<br>
 
 Initially, the code tracks CPU and memory usage during runtime, then rephrases it into an estimated energy usage (in kWh) and CO₂ emissions (in grams) based on average carbon intensity figures. To make the results more relatable, it calculates equivalents such as:
 
