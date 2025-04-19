@@ -317,7 +317,7 @@ Click below to explore the video demonstrating the **Coastal_Erosion_ML.ipynb** 
 ### <a name="bullet-environmental-cost"></a>• Environmental Cost
 
 
-To reflect the resource use behind this notebook, I included a section estimate its environmental cost including energy consumption and carbon emissions. The code uses Python libraries like psutil, time, and matplotlib. 
+To reflect the resource use behind this notebook, I included a section estimating its environmental cost, including energy consumption and carbon emissions. The code uses Python libraries like psutil, time, and matplotlib. 
 
 To generate the full environmental impact report, it is crucial to run the two setup cells at the start of the notebook, one which defines the necessary function and the one below which initialise a timer and begins tracking system resource usage:
 
