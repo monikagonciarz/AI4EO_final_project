@@ -28,7 +28,7 @@
   
 1. [Project Introduction](#1-project-introduction)
 2. [Problem Background](#2-problem-background)
-3. [The SENTINEL-2 Satellite](#3-the-SENTINEL-2-satellite)
+3. [The SENTINEL-2 Satellite](#3-the-sentinel-2-satellite)
 4. [Machine Learning Methodologies:](#4-machine-learning-methodologies)
    - [K-Means Clustering](#bullet-k-means-clustering)
    - [Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
@@ -406,10 +406,10 @@ To better understand the separability of classes, feature space clustering plots
 
 These plots help demonstrate how well different land covers cluster in spectral space, validating the choice of bands and number of clusters.
 
+<br>
 
-
-
-
+## Final takeaway
+<br>
 
 
 An average shoreline shift of 26 meters over the total study period from 2020 to 2025 was found, which  indicates significant coastal erosion. This means that, on average, the shoreline has retreated 26 meters inland, suggesting a substantial loss of land to the sea. Such a shift can have serious implications for ecosystems, infrastructure, and communities located near the coast, highlighting the urgency of monitoring and managing coastal change.
