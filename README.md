@@ -295,10 +295,13 @@ High NDVI values typically indicate dense, healthy vegetation, while lower value
 
 
 
+Afterwards, the K-Means classification was performed. Subsequently, the CNN technique was employed to further analyse the data.
+
+
 
 ### <a name="bullet-video-tutorial"></a>• Video Tutorial
 
-Click below to explore the video demonstration, providing an overview of the code's functionality and operation.
+Click below to explore the video demonstrating the **Coastal_Erosion_ML.ipynb** notebook, providing an overview of the code's functionality and operation.
 
 <br>
 
