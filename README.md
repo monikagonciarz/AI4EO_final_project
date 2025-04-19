@@ -250,17 +250,21 @@ impact_monitor.generate_report()
   <img src="./images/environmental_cost.png" alt="Description" />
 </p>
 
-<p align="center">
-  <img src="./images/report.png" alt="Description" />
-</p>
+  <img src="./images/report.png" alt="Description" width="450"/>
 
 
 
 Initially, the code tracks CPU and memory usage during runtime, then rephrases it into an estimated energy usage (in kWh) and CO₂ emissions (in grams) based on average carbon intensity figures. To make the results more relatable, it calculates equivalents such as:
 
-      • How far could you drive a car to emit the same CO₂?
-      • How many times could you charge a smartphone?
-      • How many days would it take a tree to absorb that much CO₂?
+
+
+• *How far could you drive a car to emit the same CO₂?*
+
+• *How many times could you charge a smartphone?*
+
+• *How many days would it take a tree to absorb that much CO₂?*
+
+
 
 While the direct notebook computation is captured moderately well, it's important to note that interactions with AI models (such as the aid in creating labels for CNN), downloading datasets, or reading online resources aren't easy to quantify, but they definitely add to the footprint.
 
