@@ -3,7 +3,7 @@
     <td align="center">
       <h2>Tracking Coastal Erosion with AI: Land Cover Classification and Dynamics from Space <a id="top"></a> 
 </div></h2>
-      <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques (K-means clustering and CNN) to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2020 and 2025.</p>
+      <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques (K-means clustering and Convolutional Neural Networks (CNNs)) to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2020 and 2025.</p>
     </td>
     <td>
       <img src="./images/timelapse.gif" alt="SENTINEL-2 Timelapse" width="370"/>
