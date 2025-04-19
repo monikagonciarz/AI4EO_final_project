@@ -85,10 +85,10 @@ No comprehensive studies have been conducted in the area since 2007 (Musereau et
 
 #### Why use satellite data?
 
-Advancements in satellite imagery and machine learning techniques offer new opportunities to monitor and predict coastal changes with higher accuracy. By utilizing SENTINEL-2 satellite data, alongside machine learning algorithms like K-means and CNNs, more precise predictions of erosion events can be made, aiding in better coastal management and preservation. By applying K-means clustering and Convolutional Neural Networks (CNN), we aim to classify land cover types and detect changes related to erosion over time. These machine learning techniques allow for automated and scalable analysis, providing insights into coastal dynamics and land use changes.
+Advances in satellite imagery and machine learning have opened new possibilities for monitoring coastal change with greater accuracy and efficiency. By utilizing Sentinel-2 data along with algorithms like K-means clustering and CNNs, this project identifies land cover types and tracks erosion over time. These automated techniques provide scalable insights into coastal dynamics, helping inform better decision-making for preservation and management.
 
 
-The goal is to enhance coastal management by providing more accurate, data-driven tools for monitoring erosion and supporting decision-making. Ultimately, this project demonstrates the potential of AI in Earth observation, offering an innovative approach to studying coastal erosion and environmental change.
+The goal is to notice the impacts of recent coastal erosion through accurate, data-driven tools for monitoring erosion and supporting decision-making. Ultimately, this project demonstrates the potential of AI in Earth observation, studying coastal erosion and environmental change.
 
 
 
