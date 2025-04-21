@@ -397,7 +397,7 @@ Then, expanding the analysis to 3 clusters (water, vegetation, and sand) provide
 <br>
 
 
-To better understand the separability of classes, feature space clustering plots (inspired by the Balaji, 2022 paper) were created using reflectance values from Band 3 and Band 8. The plots below show the pixel distribution and cluster centers in 2D space:
+To better understand the separability of classes, **feature space clustering plots** (inspired by the Balaji, 2022 paper) were created using classification values from K-Means computed with all 3 bands and both the NDWI and NDVI masks. The plots below show the pixel distribution and cluster centers in 2D space:
 
 <br>
 
