@@ -3,7 +3,7 @@
     <td align="center">
       <h2>Tracking Coastal Erosion with AI: Land Cover Classification and Dynamics from Space <a id="top"></a> 
 </div></h2>
-      <p>This project utilizes SENTINEL-2 imagery and advanced machine learning techniques (K-means clustering and Convolutional Neural Networks (CNNs)) to detect and monitor coastal erosion and land use transformations in the Saint-Trojan coastal zone of Western France between 2020 and 2025.</p>
+      <p>This project utilizes SENTINEL-2 imagery and an advanced machine learning technique (K-means clustering) to detect and monitor coastal erosion and land cover transformations in the Saint-Trojan coastal zone of Western France between 2020 and 2025.</p>
     </td>
     <td>
       <img src="./images/timelapse.gif" alt="SENTINEL-2 Timelapse" width="370"/>
@@ -31,7 +31,7 @@
 3. [The SENTINEL-2 Satellite](#3-the-sentinel-2-satellite)
 4. [Machine Learning Methodologies:](#4-machine-learning-methodologies)
    - [K-Means Clustering](#bullet-k-means-clustering)
-   - [Convolutional Neural Network (CNN)](#bullet-convolutional-neural-network-cnn)
+   - [IRIS](#bullet-intelligently-reinforced-image-segmentation-iris)
 5. [Datasets Used](#5-datasets-used)
 6. [Usage](#6-usage)
    - [Video Tutorial](#bullet-video-tutorial)
@@ -50,7 +50,7 @@
 
 ## 1. Project Introduction
 
-This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed at exploring the application of machine learning techniques in Earth Sciences. The focus of this project is on utilizing unsupervised and supervised learning to identify coastal erosion patterns through satellite imagery. SENTINEL-2 data is employed for its high spatial resolution and relevance in coastal monitoring. The primary algorithms used for classification in this project are K-means clustering (for unsupervised classification) and the Convolutional Neural Network (CNN) method (for feature extraction and land type identification), which are applied to analyze and monitor land cover changes over time.
+This project is the final assignment for the GEOL0069 AI4EO course at UCL, aimed at exploring the application of machine learning techniques in Earth Sciences. The focus of this project is on utilizing unsupervised and supervised learning to identify coastal erosion patterns through satellite imagery. SENTINEL-2 data is employed for its high spatial resolution and relevance in coastal monitoring. The primary algorithm used for classification in this project is K-means clustering, an unsupervised classification method, which is applied to analyze and monitor land cover changes over time.
 
 
 
@@ -85,7 +85,7 @@ No comprehensive studies have been conducted in the area since 2007 (Musereau et
 
 #### Why use satellite data?
 
-Advances in satellite imagery and machine learning have opened new possibilities for monitoring coastal change with greater accuracy and efficiency. By utilizing Sentinel-2 data along with algorithms like K-means clustering and CNNs, this project identifies land cover types and tracks erosion over time. These automated techniques provide scalable insights into coastal dynamics, helping inform better decision-making for preservation and management.
+Advances in satellite imagery and machine learning have opened new possibilities for monitoring coastal change with greater accuracy and efficiency. By utilizing Sentinel-2 data along with algorithms like K-means clustering, this project identifies land cover types and tracks erosion over time. These automated techniques provide scalable insights into coastal dynamics, helping inform better decision-making for preservation and management.
 
 
 The goal is to notice the impacts of recent coastal erosion through accurate, data-driven tools for monitoring erosion and supporting decision-making. Ultimately, this project demonstrates the potential of AI in Earth observation, studying coastal erosion and environmental change.
@@ -154,21 +154,36 @@ K-means is an unsupervised machine learning algorithm used to partition data int
 <br>  
 
 
-### <a name="bullet-convolutional-neural-network-cnn"></a>• Convolutional Neural Network (CNN)
+### <a name="bullet-intelligently-reinforced-image-segmentation-iris"></a>• Intelligently Reinforced Image Segmentation (IRIS)
 
-CNNs are a type of deep supervised learning model specifically designed to process and analyze image data. They operate by converting input images into numerical vectors and passing them through multiple layers of filters that learn to detect patterns and features such as edges, textures, and shapes (Tsamados & Chen, 2022). This makes CNNs particularly well-suited for classification tasks like land cover mapping using satellite imagery. Their ability to automatically extract spatial features, handle high-dimensional complex data, and adapt to variations such as lighting or seasonal changes makes them especially powerful tools in remote sensing and Earth observation applications.
+IRIS (Intelligently Reinforced Image Segmentation) is a machine learning technique designed for remote sensing image classification, particularly in the context of land cover classification. Unlike deep learning models such as CNNs, IRIS employs Gradient Boosting Decision Trees (GBDT), a powerful machine learning method that combines the predictive power of multiple weak models (decision trees) into a strong one. GBDT works by iteratively training decision trees, where each tree corrects the mistakes of the previous one. This sequential process enables IRIS to handle complex relationships between features in satellite images, making it well-suited for classifying land cover types like water, vegetation, and sand (ESA-PhiLab Github Page, n.d.).
 
-#### Key Components of CNNs
-1. ***Convolutional Layers:*** CNNs are comprised of neuron layers, including input, hidden, and output layers.
-2. ***Activation Functions:*** Introduce non-linearity (for example using ReLU) to capture complex relationships.
-3. ***Convolutional and Pooling Layers:*** Downsample feature maps to reduce size and overfitting.
-4. ***Fully Connected Layers:*** Combine learned features for final predictions by connecting every neuron in every layer.
-5. ***Training Process:*** Weights are optimized through backpropagation to minimize classification error.
+
+#### Key Components of IRIS
+1. ***Gradient Boosting Decision Trees (GBDT):*** IRIS uses decision trees that are trained in a boosting manner to improve classification accuracy. Each tree in the sequence tries to correct the errors made by the previous trees.
+2. ***Feature Engineering:*** IRIS leverages various image features, such as spectral bands (e.g. Red, Green, Blue, Near-Infrared) and indices (e.g. NDVI or NDWI), to train the decision trees. These features help the model learn distinct characteristics of different land cover types.
+3. ***Ensemble Learning:*** By combining many decision trees, IRIS forms a strong, accurate classifier capable of handling complex, high-dimensional remote sensing data.
+4. ***Iterative Training:*** The model is trained iteratively, with each new tree focused on areas where the previous trees made mistakes, leading to continuous improvement in classification performance.
+5. ***Robustness to Variability:*** IRIS’s ability to adapt to various environmental conditions (e.g. seasonal variations) and its use of ensemble methods help the model produce more reliable results in real-world applications.
+
 
 <br>
 
 <p align="center">
-  <img src="./images/CNN.png" alt="Description" />
+  <img src="./images/GBDT.png" alt="Description" />
+</p>
+
+
+
+<br> 
+
+This makes IRIS particularly effective for classifying satellite imagery, as it can handle the complexity and variability inherent in remote sensing data while providing accurate and interpretable land cover classifications. An **IRIS mask** is the output of this segmentation, where each pixel is assigned a class label (water = blue, vegetation = green, sand = tan). These masks are used to compare classification methods, such as K-Means, against a reference mask (ground truth) to assess accuracy. The masks for each year were manually created using the IRIS web application (as seen below).
+
+
+<br>
+
+<p align="center">
+  <img src="./images/IRIS.png" alt="Description" />
 </p>
 
 
@@ -234,9 +249,18 @@ Next, a set of functions must be loaded:
 ```python
 import rasterio
 import numpy as np
+import os
 import matplotlib.pyplot as plt
 from pyproj import Transformer
 from rasterio.windows import from_bounds
+from matplotlib.patches import Rectangle
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import seaborn as sns
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report, ConfusionMatrixDisplay
+from skimage import measure
+from shapely.geometry import LineString
+import cv2
 ```
 
 
@@ -295,7 +319,7 @@ High NDVI values typically indicate dense, healthy vegetation, while lower value
 
 
 
-Afterwards, the K-Means classification was performed. Subsequently, the CNN technique was employed to further analyse the data.
+Afterwards, the K-Means classification was performed. Subsequently, the classification results were compared with IRIS masks to further analyse the data.
 
 <br>
 
@@ -319,7 +343,7 @@ Click below to explore the video demonstrating the **Coastal_Erosion_ML.ipynb** 
 
 To reflect the resource use behind this notebook, I included a section estimating its environmental cost, including energy consumption and carbon emissions. The code uses Python libraries like psutil, time, and matplotlib. 
 
-To generate the full environmental impact report, it is crucial to run the two setup cells at the start of the notebook, one which defines the necessary function and the one below which initialise a timer and begins tracking system resource usage:
+To generate the full environmental impact report, it is crucial to run the two setup cells at the start of the notebook, one which defines the necessary function and the one below which initialises a timer and begins tracking system resource usage:
 
 ```python
 impact_monitor = ColabEnvironmentalImpact()
@@ -351,7 +375,7 @@ Initially, the code tracks CPU and memory usage during runtime, then rephrases i
 
 
 
-While the direct notebook computation is captured moderately well, it's important to note that interactions with AI models (such as the aid in creating labels for CNN), downloading datasets, or reading online resources aren't easy to quantify, but they definitely add to the footprint.
+While the direct notebook computation is captured moderately well, it's important to note that interactions with AI models (such as the aid in creating labels in IRIS), downloading datasets, or reading online resources aren't easy to quantify, but they definitely add to the footprint.
 
 The use of AI to support building this notebook arguably makes the environmental cost higher. It's a reminder to consider the trade-offs and try to use computing resources meaningfully.
 
@@ -392,6 +416,18 @@ Then, expanding the analysis to 3 clusters (water, vegetation, and sand) provide
 
 <p align="center">
   <img src="./images/kmeans.png" alt="Description" />
+</p>
+
+<br>
+
+
+To evaluate the performance of K-means clustering for land cover classification, we compared its results with both the original satellite imagery (RGB composites) and the IRIS-generated masks. This visual comparison helps assess how accurately the unsupervised K-means approach aligns with the more guided segmentation provided by IRIS, which uses gradient boosting decision trees for smarter boundary detection.
+
+
+<br>
+
+<p align="center">
+  <img src="./images/IRIScomparison.png" alt="Description" />
 </p>
 
 <br>
@@ -451,13 +487,13 @@ Balaji, K. (2022). Machine learning algorithm for feature space clustering of mi
 
 *Copernicus Dataspace: SENTINEL-2.* (n.d.). (Accessed 2025), from the Copernicus Dataspace website. https://dataspace.copernicus.eu/explore-data/data-collections/SENTINEL-data/SENTINEL-2
 
+*ESA-PhiLab.* (n.d.) (Accessed 2025). https://github.com/ESA-PhiLab/iris
+
 Gao, B. C. (1996). NDWI—A normalized difference water index for remote sensing of vegetation liquid water from space. Remote sensing of environment, 58(3), 257-266.
 
 Manawa. *Top 7 outdoor activities on the Ile d’Oléron.* (2024). Retrieved April 9, 2025, from Manawa website: https://www.manawa.com/en/articles/top-7-outdoor-activities-on-the-ile-doleron
 
 McFeeters, S. K. (1996). The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features. International journal of remote sensing, 17(7), 1425-1432.
-
-Molnar C. (2025). *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable.* https://christophm.github.io/interpretable-ml-book/cnn-features.html
 
 Musereau, J., Regnauld, H., & Planchon, O. (2007). *Vulnerability of coastal dunes to storms: development of a damage prediction model using the example of Saint-Trojan (Île d'Oléron, France).* Climatologie, 4, 145-166. https://climatology.edpsciences.org/articles/climat/full_html/2007/01/climat20074p145/climat20074p145.html
 
