@@ -222,6 +222,9 @@ Due to the large size of the datasets, they are not included here. However, indi
 4. Download the files and unzip them in your local file system for use in this project.
 
 
+<br>
+
+To run the IRIS comparison, make sure to **download the "IRIS" folder** provided in this repository and upload it to your Google Drive in the same location as the main notebook. This folder includes the three land cover masks generated using IRIS, the corresponding .tif files, and a config.json file required for mask generation. For a step-by-step guide on how the masks were created, refer to the instructions available here: [GEOL0069 Github](https://cpomucl.github.io/GEOL0069-AI4EO/Chapter%201%3AIRIS.html).
 
 
 
