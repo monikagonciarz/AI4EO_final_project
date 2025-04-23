@@ -1,0 +1,61 @@
+{
+  "name": "RGB-TIF-Dataset",
+  "images": {
+    "path": "/dataset/{id}.tif",
+    "shape": [435, 664]
+  },
+  "segmentation": {
+    "path": "{id}/mask.png",
+    "mask_encoding": "rgb",
+    "mask_area": [0, 0, 435, 664],
+    "score": "f1",
+    "unverified_threshold": 1,
+    "test_images": null
+  },
+  "classes": [
+    {
+      "name": "Water",
+      "description": "Water bodies like lakes, rivers, oceans",
+      "colour": [0, 0, 255, 70],
+      "user_colour": [0, 0, 255, 70]
+    },
+    {
+      "name": "Vegetation",
+      "description": "Green areas including forests and grasslands",
+      "colour": [34, 139, 34, 70],
+      "user_colour": [34, 139, 34, 70]
+    },
+    {
+      "name": "Sand",
+      "description": "Beaches, deserts, or sandy regions",
+      "colour": [210, 180, 140, 70],
+      "user_colour": [210, 180, 140, 70]
+    }
+  ],
+  "views": {
+    "combo1": {
+      "description": "View using RGB",
+      "type": "image",
+      "data": ["$B1", "$B2", "$B3"]
+    },
+    "combo2": {
+      "description": "Alternative RGB combo",
+      "type": "image",
+      "data": ["$B1", "$B1", "$B3"]
+    },
+    "combo3": {
+      "description": "Another RGB combo",
+      "type": "image",
+      "data": ["$B2", "$B3", "$B1"]
+    },
+    "RGB": {
+      "description": "Standard RGB view",
+      "type": "image",
+      "data": ["$B1", "$B2", "$B3"]
+    }
+  },
+  "view_groups": {
+    "default": ["combo1", "combo2"],
+    "rgb": ["combo3", "RGB"]
+  }
+}
