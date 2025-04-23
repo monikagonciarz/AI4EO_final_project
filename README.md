@@ -328,7 +328,7 @@ Afterwards, the K-Means classification was performed. Subsequently, the classifi
 
 ### <a name="bullet-video-tutorial"></a>• Video Tutorial
 
-Click below to explore the video demonstrating the **Coastal_Erosion_ML.ipynb** notebook, providing an overview of the code's functionality and operation.
+Click the image below to explore the video demonstrating the **Coastal_Erosion_ML.ipynb** notebook, providing an overview of the code's functionality and operation.
 
 <br>
 
