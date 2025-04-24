@@ -81,7 +81,7 @@ In the two decades leading up to 2007, the coastline of Saint-Trojan on Île d'O
 
 #### Why this timeframe?
 
-No comprehensive studies have been conducted in the area since 2007 (Musereau et al., 2007), making it an intriguing opportunity for analysis now. Given the increasing impact of climate change and more frequent storms, the period from 2020 to 2025 is critical for improving coastal erosion prediction. This decade is essential for enhancing our understanding of coastal dynamics and improving erosion forecasting tools, as significant erosion has been observed there in that timeframe.
+No comprehensive studies have been conducted in the area since 2007 (Musereau et al., 2007), making it an intriguing opportunity for analysis now. Given the increasing impact of climate change and more frequent storms, the period from 2020 to 2025 is critical for improving coastal erosion prediction. It is essential for enhancing our understanding of coastal dynamics and improving erosion forecasting tools, as significant erosion has been observed there in that timeframe.
 
 #### Why use satellite data?
 
@@ -193,10 +193,10 @@ This makes IRIS particularly effective for classifying satellite imagery, as it 
 
 ## 5. Datasets Used
 
-The datasets used in this project are the 10m resolution SENTINEL-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2020, 2020, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
+The datasets used in this project are the 10m resolution SENTINEL-2 Level 2A (L2A) datasets. The analysis focuses on a 30 km^2 section of the Saint-Trojan Coastal Area on the island of d'Oléron, France, with data from three key years: 2020, 2022, and 2025. This region was selected for its susceptibility to coastal erosion, making it a prime candidate for studying land cover changes and erosion patterns over time.
 
 
-Due to the large size of the datasets, they are not included here. However, individuals interested in using the same data can download them from the Copernicus Browser, which requires a free account for access.
+Due to the large size of the datasets, they are not included here. However, individuals interested in using the same data can download it from the Copernicus Browser, which requires a free account for access.
 
 #### To retrieve the datasets for the Saint-Trojan Coastal Area:
 
@@ -289,7 +289,7 @@ The NDWI is a common technique used in remote sensing to detect the presence of 
 The formula is: **NDWI = (Green - NIR) / (Green + NIR)**
 
 
-While it is a fast method for identifying water bodies, it does have some limitations. It can struggle in urban areas or when water is mixed with high levels of sediment, often confusing these with other land types (Gao, 1996). In this project, NDWI is a reference method to benchmark our results against. Our aim is to improve upon it using more robust and adaptive machine learning techniques, especially in challenging environments where NDWI alone may fall short.
+While it is a fast method for identifying water bodies, it does have some limitations. It can struggle in urban areas or when water is mixed with high levels of sediment, often confusing these with other land types (Gao, 1996). In this project, NDWI is a reference method to benchmark our results against. Our aim is to improve upon it using more robust and adaptive machine learning techniques (e.g. combining it with K-Means), especially in challenging environments where NDWI alone may fall short.
 
 <br>
 
@@ -412,7 +412,7 @@ Below are the confusion matrices and corresponding accuracies. Each matrix demon
 <br>
 
 
-Then, expanding the analysis to 3 clusters (water, vegetation, and sand) provided more detailed land cover classification, identifying transitional areas such as sandy beaches and vegetated dunes. A visual inspection suggests that this classification better reflects the coastal complexity. A K-Means classification of 3 clusters with NDWI and NDVI masks taken into account is provided here: 
+Then, expanding the analysis to 3 clusters (water, vegetation, and sand) provided more detailed land cover classification, identifying transitional areas such as sandy beaches and vegetated dunes. A visual inspection suggests that this classification better reflects the coastal complexity. A K-Means classification of 3 clusters with NDWI and NDVI masks taken into account (provided below) shows better accuracy than when 2 clusters were used. 
 
 
 <br>
