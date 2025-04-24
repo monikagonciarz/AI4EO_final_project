@@ -454,7 +454,7 @@ These plots help demonstrate how well different land covers cluster in spectral 
 <br>
 
 
-An average **shoreline shift of 26 meters** over the total study period from 2020 to 2025 was found, which  indicates **significant coastal erosion**. This means that, on average, the shoreline has retreated 26 meters inland, suggesting a substantial loss of land to the sea. Such a shift can have serious implications for ecosystems, infrastructure, and communities located near the coast, highlighting the urgency of monitoring and managing coastal change.
+An average **shoreline shift of 26 meters** over the total study period from 2020 to 2025 was found, which  indicates **significant coastal erosion**. This means that, on average, the shoreline has retreated 26 meters inland, suggesting a substantial loss of land to the sea. This translates to a 5.2-meter annual shift, which affirms the expectations of an annual coastal erosion of 4 to 6 m found in literature (Musereau et al., 2007). Such a shift can have serious implications for ecosystems, infrastructure, and communities located near the coast, highlighting the urgency of monitoring and managing coastal change.
 
 
 <br>
