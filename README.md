@@ -333,7 +333,7 @@ Click the image below to explore the video demonstrating the **Coastal_Erosion_M
 <br>
 
 
-[<img src="./images/video.png" alt="Click here to watch the video demonstration" width="500"/>](https://youtu.be/rqpMsphdrzo)
+[<img src="./images/video.png" alt="Click here to watch the video demonstration" width="500"/>](https://youtu.be/3XS5vaFIjDo)
 
 
 <br>
